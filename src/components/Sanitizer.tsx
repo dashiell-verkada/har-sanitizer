@@ -3,10 +3,11 @@ import invariant from "tiny-invariant";
 import { Button } from "../_ui/Button";
 import { P } from "../_ui/P";
 import { downloadFile } from "../lib/downloadFile";
-import { defaultScrubItems, getHarInfo, sanitize } from "../lib/har_sanitize";
+import { getHarInfo, sanitize } from "../lib/har_sanitize";
 import { ErrorMessage } from "./ErrorMessage";
 import { ScrubChooser } from "./ScrubChooser";
 import { HARUpload, UploadHar } from "./UploadHar";
+import { defaultScrubItems } from "../lib/data.ts";
 
 export type ScrubItems = {
 	words: Set<string>;
